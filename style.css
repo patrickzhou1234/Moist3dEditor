@@ -1,0 +1,88 @@
+#babcanv {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+}
+
+#babcanv:focus {
+  outline: none;
+}
+
+#menuselections {
+  position: absolute;
+  z-index: 1000;
+  left:0px;
+  top:0px;
+  width: 100vw;
+  height:6vh;
+  background-color: #1D2333;
+  transition: top 0.2s;
+}
+
+label {
+  color: white;
+  font-size: calc(1.5vw + 1.5vh);
+  margin-left: calc(0.5vh + 0.5vw);
+  margin-top: 0px;
+}
+
+input[type=checkbox] {
+  width: 4vw;
+  height: 4vh;
+}
+
+#meshtype {
+  border: none;
+  border-radius: 4px;
+  width: 20vw;
+  height: 4vh;
+  background-color: rgb(39, 48, 71);
+  color: white;
+  font-size: calc(1vw + 1vh);
+}
+
+#meshtype:focus {
+  outline: none;
+}
+
+#menureveal {
+  position: absolute;
+  left:46vw;
+  top:6vh;
+  width: 8vw;
+  height: 8vh;
+  z-index: 100;
+  font-size: calc(1.5vw + 1.5vh);
+  background-color: rgb(52, 61, 85);
+  color: white;
+  border: none;
+  transition: color 0.2s, background-color 0.2s, top 0.2s;
+}
+
+#menureveal:hover {
+  cursor: pointer;
+  background-color: rgb(54, 66, 99);
+}
+
+#menureveal:active {
+  background-color: rgb(57, 70, 104);
+}
+
+#sizeToggle {
+  width: 8vw;
+  height: 0.5vh;
+  -webkit-appearance: none;
+  background-color: white;
+}
+
+#sizeToggle::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: solid calc(0.2vw + 0.2vh) white;
+  background-color: #1D2333;
+  border-radius: 50%;
+  width: 3vh;
+  height: 3vh;
+}
