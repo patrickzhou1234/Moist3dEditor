@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Physics</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="babylon.js"></script>
+    <script src="babylonjs.loaders.min.js"></script>
+    <script src="ammo.js"></script>
+  </head>
+  <body>
+    <div id="menuselections">
+      <input name="colorpicker" id="colorpicker" type="color" value="#FF0000">
+      <label for="colorpicker">Mesh Color</label>
+      <input id="frontfacingvis" type="checkbox" name="frontfacingvis" checked>
+      <label for="frontfacingvis">Show Spawn Mesh</label>
+      <select id="meshtype" name="meshtype">
+        <option value="box">Box</option>
+        <option value="sphere">Sphere</option>
+        <option value="cylinder">Cylinder</option>
+        <option value="capsule">Capsule</option>
+      </select>
+      <label for="meshtype">Mesh Type</label>
+      <input id="sizeToggle" type="range" min="0" max="100" value="50">
+      <label for="sizeToggle">Size</label>
+    </div>
+    <button id="menureveal">⇧</button>
+    <canvas id="babcanv"></canvas>
+    <script src="script.js"></script>
+  </body>
+</html>
